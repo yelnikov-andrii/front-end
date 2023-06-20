@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.scss';
-import { Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 
-export const App: React.FC = () => {
+export const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />}>
+        </Route>
+      </Routes>
+    </>
   );
 };
